@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDjkFihpyQrt2AC09I3KJpvssP5kHYfR2w",
-  authDomain: "serene-stays-ab67f.firebaseapp.com",
-  projectId: "serene-stays-ab67f",
-  storageBucket: "serene-stays-ab67f.appspot.com",
-  messagingSenderId: "279352104363",
-  appId: "1:279352104363:web:79cdae2123a9218a6a6eee"
+apiKey:import.meta.env.VITE_apiKey,
+authDomain:import.meta.env.VITE_authDomain,
+projectId:import.meta.env.VITE_projectId,
+storageBucket:import.meta.env.VITE_storageBucket,
+messagingSenderId:import.meta.env.VITE_messagingSenderId,
+appId:import.meta.env.VITE_appId
 };
 
 // Initialize Firebase

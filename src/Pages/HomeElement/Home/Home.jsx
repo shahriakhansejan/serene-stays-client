@@ -28,7 +28,7 @@ const Home = () => {
         ))}
       </div>
       <h1 className="styleText text-5xl font-bold text-orange-900 text-center my-12">Feature Rooms</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid px-1 grid-cols-1 md:grid-cols-2 gap-12">
         {roomsData.slice(0,4).map((roomData, index) => (
           <FeatureRooms
             roomData={roomData}
@@ -40,7 +40,7 @@ const Home = () => {
       <div className="flex justify-center mb-16 my-10">
       <Link to='/rooms'><button className="btn btn-success btn-lg text-white">See all Rooms<FaArrowRightLong /></button></Link>
       </div>
-      <div>
+      <div className="px-1">
         <Subscribe></Subscribe>
       </div>
     </div>

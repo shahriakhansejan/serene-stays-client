@@ -63,24 +63,24 @@ const RoomDetails = () => {
   const today = moment().startOf();
 
   return (
-    <div>
-      <h1 className="text text-3xl font-bold text-green-800 text-center my-6 border-b">
+    <div className="px-2 lg:px-0">
+      <h1 className="text text-xl md:text-3xl font-bold text-green-800 text-center my-6 border-b">
         Details of {title}
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <div className="col-span-2">
+        <div className="col-span-1 lg:col-span-2">
           <img className="rounded" src={image} alt="" />
         </div>
         <div className="flex flex-col justify-between">
           <span>
-            <h1 className="text-4xl font-extrabold mb-5 text-[#1c1c1c]">
+            <h1 className="text-xl md:text-4xl font-extrabold mb-5 text-[#1c1c1c]">
               {title}
             </h1>
-            <p className="text-justify text-lg font-medium text-[#444444]">
+            <p className="text-justify text-base md:text-lg font-medium text-[#444444]">
               {RoomDescription}
             </p>
           </span>
-          <span className="flex justify-between items-center">
+          <span className="flex flex-col gap-4 md:flex-row justify-between my-3 md:my-0 items-start md:items-center">
             {
               //  onClick={()=>handleBookings(_id)}
               today.isBetween(checkInDate, checkOutDate, undefined, "[]") ? (
@@ -104,18 +104,18 @@ const RoomDetails = () => {
               <BookedForm setReFetch={setReFetch}  room={room}></BookedForm>
             </dialog>
 
-            <p className="flex items-center text-yellow-700 font-semibold text-2xl">
-              <LuDollarSign className="text-3xl" />
+            <p className="flex items-center text-yellow-700 font-semibold text-xl md:text-2xl">
+              <LuDollarSign className="text-2xl md:text-3xl" />
               {PricePerNight} per Night
             </p>
           </span>
         </div>
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col-reverse gap-8 lg:flex-row items-start lg:items-center justify-between">
         <div className="">
           <h1 className="text-xl text-yellow-500 font-bold">Rate & Review</h1>
-          <span className="flex gap-4 mt-3 items-center border-b-2">
+          <span className="flex flex-col md:flex-row gap-4 mt-3 items-center border-b-2">
             <img
               className="w-12 h-12 rounded-full"
               src={user?.photoURL ? user.photoURL : userData?.photo}
@@ -135,7 +135,7 @@ const RoomDetails = () => {
           </h1>
 
           <span>
-            <h4 className="flex gap-2 text-green-800 text-xl my-3 font-bold items-center">
+            <h4 className="flex flex-col md:flex-row gap-2 text-green-800 text-xl my-3 font-bold items-center">
               <FaChartArea className="text-2xl" /> {RoomSize}{" "}
               {SpecialOffers ? (
                 <p className="text-green-800 text-xl font-bold">

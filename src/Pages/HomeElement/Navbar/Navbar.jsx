@@ -46,7 +46,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex items-center gap-10">
-            <img className="w-28" src={navLogo} alt="" />
+            <img className="w-16 md:w-28" src={navLogo} alt="" />
             <div className="hidden lg:flex">
               <ul className="flex text-[#323232] activeNav font-semibold gap-5">{navItem}</ul>
             </div>
@@ -56,12 +56,12 @@ const Navbar = () => {
 
             {
                 user? <span className="flex gap-1 items-center"><div className="tooltip tooltip-bottom" data-tip={user?.displayName? user.displayName : userData?.name}>
-                <button><img  className="w-12 rounded-full" src={user?.photoURL? user.photoURL : userData?.photo} alt="" /></button>
-              </div> <button onClick={handleLogOut} className="btn font-bold btn-error text-white">Sign Out</button></span>
+                <button><img  className="w-10 md:w-12 rounded-full" src={user?.photoURL? user.photoURL : userData?.photo} alt="img" /></button>
+              </div> <button onClick={handleLogOut} className="btn btn-sm md:btn-md font-bold btn-error text-white">Sign Out</button></span>
                  : 
                 <span className="flex gap-1 items-center">
-                    <img className="w-12 rounded-full" src={userImg} alt="" />
-                    <Link to='/sign-in'><button className="btn font-bold btn-success text-white">Sign In</button></Link>
+                    <img className="w-10 md:w-12 rounded-full" src={userImg} alt="img" />
+                    <Link to='/sign-in'><button className="btn font-bold btn-sm md:btn-md btn-success text-white">Sign In</button></Link>
                 </span>
             }
         </div>

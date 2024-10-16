@@ -35,7 +35,7 @@ const SignIn = () => {
     }
   return (
     <div className="bg-[#faf9f5] max-w-4xl mx-auto py-12 my-16 rounded-lg">
-      <h1 className="text-5xl font-bold text-[#1c1c1c] text-center">
+      <h1 className="text-4xl font-bold text-[#1c1c1c] text-center">
         Sign In Now !
       </h1>
       <div className="card-body">

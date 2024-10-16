@@ -100,7 +100,7 @@ if(loading){
 
   return (
     <div className="flex flex-col bg-[#f9f9f9] rounded-lg shadow-lg p-1 mb-5 lg:flex-row">
-      <figure className="w-2/3">
+      <figure className="w-full lg:w-2/3">
         <img src={image} className="rounded" alt="Album" />
       </figure>
       <div className="card-body">

@@ -97,7 +97,7 @@ const BookingUpdate = ({ booking, setReFetch }) => {
           X
         </button>
       </div>
-      <h3 className="font-bold text-lg">Booking Form of {email}</h3>
+      <h3 className="font-bold text-sm md:text-lg">Booking Form of {email}</h3>
 
       <form onSubmit={handleBookingForm} className="card-body">
         <div className="form-control">
@@ -113,7 +113,7 @@ const BookingUpdate = ({ booking, setReFetch }) => {
             required
           />
         </div>
-        <span className="flex gap-1">
+        <span className="flex flex-col md:flex-row gap-1">
           <div className="form-control w-full">
             <label className="label">
               <span className="label-text">Check In</span>

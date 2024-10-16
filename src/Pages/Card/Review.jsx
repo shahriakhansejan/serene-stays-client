@@ -7,10 +7,10 @@ const Review = ({ review }) => {
     return (
         <div className='mt-20 w-full md:w-1/2 lg:w-1/3 border-b'>
             <div className='flex items-center gap-3'>
-                <img className='w-16 h-16 rounded-full' src={photoR} alt="" />
+                <img className='w-10 h-10 md:w-16 md:h-16 rounded-full' src={photoR} alt="" />
                 <span>
-                    <h1 className='text-xl font-bold text-[#1c1c1c]'>{nameR}</h1>
-                    <p className='text-blue-800 font-semibold'>{emailR}</p>
+                    <h1 className='text-lg md:text-xl font-bold text-[#1c1c1c]'>{nameR}</h1>
+                    <p className='text-blue-800 text-sm md:text-base font-semibold'>{emailR}</p>
                 </span>
             </div>
             <span className='flex gap-10 my-2 items-center'>
